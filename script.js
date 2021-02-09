@@ -33,6 +33,9 @@ function drawFood (){
 
 document.addEventListener('keydown', update);
 
+function reset (){
+    location.reload();
+}
 function update (event) {
     if(event. keyCode == 37 && direction != "right") {direction = "left"; }
     if(event.keyCode == 38 && direction != "down") {direction = "up"; }
